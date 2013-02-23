@@ -91,6 +91,7 @@ public class Main {
 					//BROWSER_IE, BROWSER_CHROME, BROWSER_FIREFOX, BROWSER_SAFARI, BROWSER_SAFARI_50_UNDER
 				Logger.printErrln("\t-b [browser]     : IE CHROME FIREFOX SAFARI SAFARI_50_UNDER");
 				}
+				Logger.printErrln("-s [cookiestring] (instead of -b)");
 				Logger.printErrln("-l -c is optional.");
 				Logger.printErrln("\tif not set, will not send owner comment.");
 				Logger.printErrln("\tonly print cookie");
