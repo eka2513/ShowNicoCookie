@@ -52,13 +52,16 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		try {
-			Getopt options = new Getopt("nicoownercomment", args, "l:c:b:");
+			Getopt options = new Getopt("nicoownercomment", args, "s:l:c:b:");
 			String cookie = null;
 			String lv = null;
 			String comment = null;
 			int c;
 			while ((c = options.getopt()) != -1) {
 				switch (c) {
+				case 's':
+					cookie = options.getOptarg();
+					break;
 				case 'b':
 					//ブラウザから取得
 					String browser = FieldReflecter.getBrowser(options.getOptarg());
